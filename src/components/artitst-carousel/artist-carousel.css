@@ -1,0 +1,187 @@
+.artist-carousel-container {
+    position: relative;
+    width: 80%;
+}
+.artist-img-wrapper {
+    height: 90%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.artist-img-bg {
+    border-radius: 12px;
+    width:200px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+#neon-shadow {
+    font-family: Zen_Dots !important;
+}
+.artist-carousel-container p {
+    font-family: Zen_Dots !important; 
+}
+.carousel-cyan-bg {
+    background: rgb(8, 178, 184);
+}
+.carousel-blood-red {
+    background: rgb(138 9 9);
+}
+.carousel-dull-blue {
+    background: rgb(129, 135, 157);
+}
+.carousel-other-white {
+    background: rgb(234, 226, 246);
+}
+.carousel-that-grey {
+    background: rgb(121, 131, 127);
+}
+.carousel-just-black {
+    background: rgb(29, 30, 30);
+}
+.carousel-indraneel-blue {
+    background: rgb(44, 46, 85);
+}
+.carousel-that-blue {
+    background: rgb(34, 58, 186);
+}
+img.artist-img {
+    width: 220px;
+    position: absolute;
+    top: -40px;
+}
+.custom-width {
+    width: 156px !important;
+    left: 15px !important;
+}
+.music-icon-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeline-play-container {
+    position: relative;
+}
+.timeline-circle {
+    position: absolute;
+    background: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: -4px;
+    left: 10px;
+}
+.play-bg {
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3px 0 3px;
+}
+.artist-carousel-container p {
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.carousel-social-container {
+    display: flex;
+    justify-content: space-between;
+}
+/* custom carousel css */
+.slick-next {
+    right: 80px;
+}
+.slick-prev {
+    left: 80px;
+}
+.slick-slider {
+    padding: 10px;
+}
+.slick-prev, 
+.slick-next {
+    top: 322px;
+    z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+    color: transparent;
+}
+/* Neon Button */
+.cta-neon-button {
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(317 100% 54%);
+    border: hsl(323 21% 16%) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+  
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  
+    box-shadow: inset 0 0 0.5em 0 hsl(323 21% 16%), 0 0 0.5em 0 hsl(317 100% 54%);
+  
+    position: relative;
+  }
+  
+  .cta-neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: hsl(317 100% 54%);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+  }
+  
+  .cta-neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em hsl(317 100% 54%);
+    opacity: 0;
+    background-color: hsl(317 100% 54%);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .cta-neon-button:hover,
+  .cta-neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  }
+  
+  .cta-neon-button:hover::before,
+  .cta-neon-button:focus::before {
+    opacity: 1;
+  }
+  .cta-neon-button:hover::after,
+  .cta-neon-button:focus::after {
+    opacity: 1;
+  }
+/* Media query */
+@media screen and (min-width: 999px){
+    .slick-next {
+        right: 298px;
+    }
+    .slick-prev {
+        left: 298px;
+    }
+}

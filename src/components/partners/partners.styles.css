@@ -1,0 +1,18 @@
+.partner-card {
+    min-height: 122px;
+}
+.partner-card-wrapper .cards-basic img {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.invert-filter {
+    filter: invert(1);
+}
+.partner-card-wrapper .slick-slider .slick-prev, 
+.partner-card-wrapper .slick-next {
+    top: 50%;
+}
+.partner-card-wrapper .slick-slider .slick-list {
+    padding: 16px;
+}
